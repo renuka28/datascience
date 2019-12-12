@@ -1,0 +1,30 @@
+Think about some indicators that might be helpful to compute.
+
+Here are some ideas that might be helpful:
+
+The average volume over the past five days.
+The average volume over the past year.
+The ratio between the average volume for the past five days, and the average volume for the past year.
+The standard deviation of the average volume over the past five days.
+The standard deviation of the average volume over the past year.
+The ratio between the standard deviation of the average volume for the past five days, and the standard deviation of the average volume for the past year.
+The year component of the date.
+The ratio between the lowest price in the past year and the current price.
+The ratio between the highest price in the past year and the current price.
+The year component of the date.
+The month component of the date.
+The day of week.
+The day component of the date.
+The number of holidays in the prior month.
+
+
+
+Accuracy would improve greatly by making predictions only one day ahead. For example, train a model using data from 1951-01-03 to 2013-01-02, make predictions for 2013-01-03, and then train another model using data from 1951-01-03 to 2013-01-03, make predictions for 2013-01-04, and so on. This more closely simulates what we'd do if we were trading using the algorithm.
+
+We can also improve the algorithm used significantly. Try other techniques, like a random forest, and see if they perform better.
+
+We can also incorporate outside data, such as the weather in New York City (where most trading happens) the day before, and the amount of Twitter activity around certain stocks.
+
+we can also make the system real-time by writing an automated script to download the latest data when the market closes, and make predictions for the next day.
+
+Finally, we can make the system "higher-resolution". we're currently making daily predictions, but we could make hourly, minute-by-minute, or second by second predictions. This will require obtaining more data, though. we could also make predictions for individual stocks instead of the S&P500.
